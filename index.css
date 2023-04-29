@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+    font-size: 15px;
+
+}
+
+:root {
+    --bg-primary : rgba(7, 8, 8, 0.566);
+     --white: white;
+     --tick-color: rgb(11, 96, 11);
+     --bg-warning: rgb(170, 46, 8);
+}
+
+
+
+.main-section {
+    min-height: 100vh;
+    border: 2px solid green;
+ display: flex;
+ flex-direction: column;
+}
+
+.upper-section {
+    
+    min-height: 50vh;
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    background-image: url("./images/bg-pattern.svg")
+                                 
+}
+
+
+.upper-section div {
+    margin-top: 4rem;
+    
+    width: 50%;
+    margin-inline: auto;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    
+}
+
+.pattern-circles {
+    position: absolute;
+    z-index: -1;
+    left: 45%;
+    top: -2rem;
+    width: 100px;
+}
+
+
+
+.middle-section {
+    border: 2px solid red;
+    width: 30%;
+    height: 50vh;
+    position: absolute;
+    left: 35%;
+    top: 30%;
+    background-color: var(--white);
+    
+    
+
+}
+
+.page-views {
+    display: flex;
+    justify-content: space-between;
+    
+
+
+}
+
+.page-slider {
+    padding-top: 2rem;
+}
+
+.page-slider, .lower-section {
+    padding-inline: 2rem;
+
+}
+
+.page-slider img {
+margin-block: 2rem;
+}
+
+
+.billing  {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 10px;
+    
+}
+
+.billing p {
+    font-size: xx-small;
+}
+
+.billing input {
+    appearance: none;
+    width: 2rem;
+    background-color: red;
+    border-radius: 1rem;
+    padding-block: 0.2px;
+}
+
+.billing input[type="range"]::-webkit-slider-thumb {
+  background-color: green !important;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+
+
+
+.ticked-icons {
+  
+    font-size: x-small;
+    
+}
+ .image2 {
+    font-size: x-small;
+    margin-top: 1rem;
+}
+
+.lower-section {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.lower-section button {
+    align-self: center;
+    color: var(--white);
+    background-color: var(--bg-primary);
+    border-radius: 1rem;
+    padding-block: 0.5rem;
+    border: none;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+    .attribution a { 
+        color: hsl(228, 45%, 44%); 
+    }
